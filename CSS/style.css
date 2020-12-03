@@ -1,0 +1,181 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: inter;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1px solid #e8e8e8;
+    box-shadow: 0 0 5px #e8e8e8;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-container a {
+padding: 0 15px;
+color: #333333;
+text-decoration: none;
+
+}
+
+.nav-container a:nth-of-type(6) {
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+
+}
+
+a.search {
+    font-size: 30px;
+}
+
+/*-----------------------------------------*/
+
+.main {   
+    width: 90%;
+    margin: auto;
+}
+
+.intro {
+    margin:30px 0;
+}
+
+.intro h1{
+    font-size: 40px;
+    color: #222222;
+}
+
+.intro p {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.intro button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    font-weight: 700;
+    background-image: linear-gradient(to top, #2f2f2f, #646464);
+}
+
+/*------------------------------*/
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.topics {
+    flex-basis:70%;
+    margin-right: 30px;
+}
+
+.sidebar {
+    flex-basis:30%;    
+}
+
+.image img {
+    width: 100%;
+}
+
+
+
+
+.list {
+    margin-top: 35px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row-items {
+    flex-basis: 22%;
+}
+
+.row-items img {
+    width: 100%;
+}
+
+.row-items h4 {
+    margin-top: 10px;
+    color: #666666;
+    font-style: italic;
+}
+
+.row-items p {
+    margin-top: -15px;
+    color: black;
+    font-weight: 700;
+}
+
+.row-items p:hover {
+    color: #555555;
+}
+
+/*-------------------------------*/
+
+.sidebar a {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    text-decoration: none;
+}
+
+.sidebar i:hover{
+    color: #555555;    
+}
+
+.sidebar i {
+    font-size: 40px;
+    color: #e62b1e;
+    margin-right: 15px;  
+    position: relative;  
+    top: 15px;
+}
+
+.sidebar div h3{
+    color: #000000;
+}
+
+.sidebar div p{
+    font-size: 15px;
+    color: #333333;
+    margin-top: -15px;
+}
+
+button.feed {
+    position: fixed;
+    right: 10px;
+    bottom: 0;
+    color: #fff;
+    padding: 12px 15px;
+    background-color: #e62b1e;
+    border: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 15px;
+}
+
+/*--------------------------------------*/
+
+@media screen and (max-width:768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+}
+
+
